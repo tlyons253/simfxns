@@ -7,7 +7,7 @@ Authors@R: person("Timothy P.", "Lyons", email="tlyons253@gmail.com",
 Description: a collection of functions that allows for more organized passing of a data-generating argument and model
           to jagsUI where model structure or data simulation parameters may vary. Currently the summary functions are not
           generic and only are specific to the brood simulation model
-Depends: R(>= 3.5.2)
+Depends: R(>= 3.5.0)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
