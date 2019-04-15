@@ -75,9 +75,10 @@ repeat.sims<-function(SIMdata.fxn,
 
     files<-list.files(path=outfolder.path,full=TRUE)			#list files in output folder
     inds<-file.info(files)$size<5000					#index of files where the size < 5KB
-    file.remove(files[inds])						#delete failed runs
+    file.remove(files[inds])		#delete failed runs
 
-    sims.complete<-length(files)
+    files2<-list.files(path=outfolder.path,full=TRUE)	
+    sims.complete<-length(files2)
 
     #count number of sims in folder
     if (sims.complete>=n.sims) break		#if the number of files meets the desired # of simulations, stop the function
