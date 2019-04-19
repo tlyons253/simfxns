@@ -64,7 +64,7 @@ filepath<-results_path
 
 
 x<-list.files(path=filepath,pattern=results_pattern, full=TRUE)
-x
+
 
 
 y<-lapply(x,readRDS)
